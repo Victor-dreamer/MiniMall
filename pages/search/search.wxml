@@ -1,0 +1,45 @@
+<!--pages/search/search.wxml-->
+<view class="search_body">
+    <!-- 搜索框开始 -->
+    <view style="height:{{titleBarHeight}};padding-top:{{statusBarHeight}}">
+        <view class="header"
+            style="height:{{titleBarHeight}};padding-top:{{statusBarHeight}};background-color: {{nav.bg}}">
+            <text class="iconfont icon-houtui header-back" bindtap="backToLast"></text>
+            <view class="header-title">
+                <input value="{{inpValue}}" placeholder="搜索" bindinput="handleInput"> </input>
+            </view>
+        </view>
+    </view>
+    <!-- 搜索框结束 -->
+    <!-- 热门推荐开始 -->
+    <view class="search_hot">
+        <view class="container">
+            <view class="search_hot_top">
+                <view class="hot_title">热门推荐</view>
+                <view class="hot_change">
+                    <text class="iconfont icon-icon-refresh"></text>
+                </view>
+            </view>
+            <view class="hot_list">
+                <view class="hot_text" wx:for="{{hotList}}">
+                    {{ item }}
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 热门推荐结束 -->
+    <!-- 搜索结果列表 -->
+    <view class="goods_result">
+        <view class="container">
+            <navigator class="goods_item" wx:for="{{goods}}" wx:key="goods_id"
+                url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+                <!-- 右侧 商品容器 -->
+                <view class="goods_info_wrap">
+                    <view class="goodsName">
+                        {{ item.goods_name}}
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>

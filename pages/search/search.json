@@ -1,0 +1,7 @@
+{
+  "usingComponents": { 
+    "bar": "../../components/bar/bar"
+  },
+  "navigationBarTextStyle": "black",
+  "navigationStyle":"custom"
+}

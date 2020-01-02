@@ -1,0 +1,22 @@
+/* components/searchInput/searchInput.wxss */
+@import "../../styles/iconfonts.wxss";
+
+.search_input {
+    height: 70rpx;
+    padding: 20rpx 20rpx;
+}
+
+.search_input navigator {
+    height: 100%;
+    /* background-color: #f7f7f7; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    border-radius: 60rpx;
+}
+
+.search_input view {
+    display: inline-block;
+    vertical-align: middle;
+}

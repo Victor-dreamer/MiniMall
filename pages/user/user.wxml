@@ -1,0 +1,58 @@
+<!--pages/user/user.wxml-->
+<view class="user_info_wrap">
+    <view class="usericon">
+        <view class="usericon_image">
+            <image mode="widthFix"
+                src="{{ userInfo.avatar }}">
+            </image>
+        </view>
+    </view>
+    <view class="user_descri">
+        <view class="username">欢迎您！{{ userInfo.nickname }}</view>
+    </view>
+</view>
+
+<!-- 功能菜单列表 -->
+<view class="user_content">
+    <view class="container">
+        <view class="user_main">
+            <view class="history_wrap">
+                <navigator>
+                    <view class="his_num">0</view>
+                    <view class="his_name">收藏的店铺</view>
+                </navigator>
+                <navigator url="/pages/like/like">
+                    <view class="his_num">{{collectNums}}</view>
+                    <view class="his_name">收藏的商品</view>
+                </navigator>
+                <navigator>
+                    <view class="his_num">0</view>
+                    <view class="his_name">关注的商品</view>
+                </navigator>
+                <navigator>
+                    <view class="his_num">0</view>
+                    <view class="his_name">我的足迹</view>
+                </navigator>
+            </view>
+            <!-- 收货地址管理 -->
+            <view class="address_wrap">
+                收货地址管理
+            </view>
+            <!-- 应用信息相关 -->
+            <view class="app_info_wrap">
+                <view class="app_info_item">个人信息</view>
+                <view class="app_info_item" bindtap="getScancode">扫一扫</view>
+                <view class="app_info_item app_info_contact">
+                    <text>联系客服</text>
+                    <text>400-618-4000</text>
+                </view>
+                <navigator url="#" class="app_info_item">意见反馈</navigator>
+                <view class="app_info_item">关于我们</view>
+            </view>
+            <!-- 推荐 -->
+            <view class="recommend_wrap">
+                <button open-type="share">把应用推荐给其他人</button>   
+            </view>
+        </view>
+    </view>
+</view>

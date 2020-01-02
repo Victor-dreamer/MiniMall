@@ -1,0 +1,31 @@
+/**app.wxss**/
+
+@import "styles/iconfonts.wxss";
+
+/* 初始化全局样式 */
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+page {
+    /* 定义主题颜色 */
+    --themeColor: #e84846;
+    /* 定义统一字体 */
+    font-size: 28rpx;
+
+}
+
+
+/* 定义全局版心 */
+.container {
+    margin: 0 auto;
+    width: 700rpx;
+}

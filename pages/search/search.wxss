@@ -1,0 +1,82 @@
+/* pages/search/search.wxss */
+
+page {
+    background-color: #f6f6f6;
+}
+
+
+.header {
+	display: flex;
+	align-items: center;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	left:0;
+}
+	
+.header .header-title {
+	position: absolute;
+    left: 10%;
+	font-size: 28rpx;
+    border-radius: 15rpx;
+	width: 400rpx;
+	background-color: #f7f7f7;
+}
+
+.header-back{
+	position: absolute;
+	left: 20rpx;
+	font-size:36rpx;
+	color: black;
+}
+
+.header .header-title input {
+	display: inline-block;
+	padding: 0 0 0 15rpx;
+	vertical-align: middle;
+}
+
+
+
+.search_hot {
+    background-color: #fff;
+}
+
+.search_hot_top {
+    padding-top: 20rpx;
+    width: 100%;
+    height: 60rpx;
+}
+
+.search_hot .hot_title {
+    color: #232326;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    float: left;
+
+}
+
+.search_hot .hot_change {
+    font-size: 30rpx;
+    line-height: 30rpx;
+    float: right;
+}
+
+.hot_list view {
+    display: inline-block;
+    background-color: #f0f2f5;
+    color: #686868;
+    font-size: 24rpx;
+    padding: 10rpx 20rpx;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+    border-radius: 5rpx;
+}
+
+
+/* 商品列表数据呈现 */
+.goods_result .goods_item {
+    border-bottom: 1px solid #ccc;
+    padding: 5rpx 0;
+  }

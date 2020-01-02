@@ -1,0 +1,8 @@
+<view style="height:{{titleBarHeight}};padding-top:{{statusBarHeight}}">
+  <view class="header" style="height:{{titleBarHeight}};padding-top:{{statusBarHeight}};background-color: {{nav.bg}}">
+    <text class="iconfont icon-houtui header-back" bindtap="backToLast"></text>
+    <view class="header-title">
+      <input type="search" placeholder="搜索"></input>
+    </view>
+  </view>
+</view>

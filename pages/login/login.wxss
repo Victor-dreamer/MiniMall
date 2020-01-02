@@ -1,0 +1,20 @@
+/* pages/login/login.wxss */
+
+.loginicon {
+    margin: 100rpx auto;
+    width: 200rpx;
+}
+
+.loginicon image {
+    width: 100%;
+}
+
+.login_btn {
+    text-align: center;
+    font-size: 40rpx;
+}
+
+.login_btn button {
+    width: 200rpx;
+    background-color: #ccc;
+}

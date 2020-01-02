@@ -1,0 +1,91 @@
+<!--index.wxml-->
+<view class="jd_index">
+    <view class="index_top">
+        <!-- 搜索框部分开始 -->
+        <SearchInput searchStyle="{{searchStyle}}"></SearchInput>
+        <!-- 搜索框部分结束 -->
+        <!-- 轮播图开始 -->
+        <view class="index_swiper">
+            <view class="container">
+                <swiper autoplay circular indicator-dots indicator-active-color="#fff">
+                    <swiper-item wx:for="{{ swiperList }}" wx:key="goods_id">
+                        <navigator url="{{ item.navigator_url }}" open-type="navigateTo">
+                            <image mode="widthFix" src="{{ item.image_src }}"></image>
+                        </navigator>
+                    </swiper-item>
+                </swiper>
+            </view>
+        </view>
+        <!-- 轮播图结束 -->
+    </view>
+    <!-- 分类模块开始 -->
+    <view class="index_category">
+
+        <view class="cate_items">
+            <navigator url="/pages/category/category" open-type="switchTab">
+                <view class="cate_items_pic">
+                    <image mode="widthFix"
+                        src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t1/28873/5/1455/6885/5c120bb9Eb6610bee/29d349f92aeb6eaf.png.webp">
+                    </image>
+                </view>
+                <view class="items_text">全部</view>
+            </navigator>
+            <navigator url="/pages/goods_list/goods_list?cid=188">
+                <view class="cate_items_pic">
+                    <image mode="widthFix"
+                        src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t1/39401/17/2391/5859/5cc06fcfE2ad40668/28cda0a571b4a576.png.webp">
+                    </image>
+                </view>
+                <view class="items_text">电子设备</view>
+            </navigator>
+            <navigator url="/pages/goods_list/goods_list?cid=862">
+                <view class="cate_items_pic">
+                    <image mode="widthFix"
+                        src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t1/17169/3/4127/4611/5c2f35cfEd87b0dd5/65c0cdc1362635fc.png.webp">
+                    </image>
+                </view>
+                <view class="items_text">潮牌服饰</view>
+            </navigator>
+            <navigator url="/pages/goods_list/goods_list?cid=380">
+                <view class="cate_items_pic">
+                    <image mode="widthFix"
+                        src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t17725/156/1767366877/17404/f45d418b/5ad87bf0N66c5db7c.png.webp">
+                    </image>
+                </view>
+                <view class="items_text">生鲜食品</view>
+            </navigator>
+        </view>
+    </view>
+
+    <!-- 分类模块结束 -->
+    <!-- 推荐开始 -->
+    <view class="index_commend">
+        <view class="container">
+            <view class="commend_title">
+                <image mode="widthFix"
+                    src="//img11.360buyimg.com/jdphoto/jfs/t1/31601/22/15554/14040/5cc2a86fEbdb1098b/88174b36f85283b6.png">
+                </image>
+            </view>
+            <view class="goodsList_content">
+                <view class="container">
+                    <navigator class="goods_item" wx:for="{{goodsList}}" wx:key="goods_id"
+                        url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+                        <!-- 左侧 图片容器 -->
+                        <view class="goods_img_wrap">
+                            <image mode="widthFix"
+                                src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}">
+                            </image>
+                        </view>
+                        <!-- 右侧 商品容器 -->
+                        <view class="goods_info_wrap">
+                            <view class="goods_name">{{item.goods_name}}</view>
+                            <view class="goods_price">￥{{item.goods_price}}</view>
+                        </view>
+                    </navigator>
+                </view>
+
+            </view>
+        </view>
+    </view>
+    <!-- 推荐结束 -->
+</view>

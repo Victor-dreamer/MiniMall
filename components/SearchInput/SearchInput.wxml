@@ -1,0 +1,8 @@
+<!--components/searchInput/searchInput.wxml-->
+
+<view class="search_input" style="background-color: {{searchStyle.bgc}};">
+    <navigator url="../search/search" style="background-color: {{searchStyle.s_bgc}};">
+        <view class="iconfont icon-sousou"></view> 
+        <text decode="{{true}}" space="{{true}}">&nbsp;搜索</text>
+    </navigator>
+</view>

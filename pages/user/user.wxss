@@ -1,0 +1,97 @@
+/* pages/user/user.wxss */
+page {
+  background-color: #edece8;
+}
+
+.user_info_wrap {
+  display: flex;
+  background-color: #fff;
+  height: 220rpx;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2rpx solid #e4e4e4;
+}
+.user_info_wrap .usericon {
+  flex: 2;
+  justify-content: center;
+  align-items: center;   
+}
+
+.user_info_wrap .usericon_image {
+  width: 150rpx;
+  justify-content: center;
+  align-items: center; 
+  padding-left: 40rpx;
+}
+
+.user_info_wrap .usericon image {
+  border-radius: 50%;
+  width: 100%;
+}
+.user_info_wrap .user_descri {
+  flex: 5;
+  padding-left: 20rpx;
+}
+.user_info_wrap .user_descri .username {
+  font-size: 36rpx;
+}
+
+/* 菜单栏 */
+.user_content {
+  margin-top: 20rpx;
+}
+
+.user_content .user_main .history_wrap {
+  background-color: #fff;
+  display: flex;
+}
+.user_content .user_main .history_wrap navigator {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.user_content .user_main .history_wrap navigator .his_num {
+  color: var(--themeColor);
+}
+.user_content .user_main .orders_wrap {
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+.user_content .user_main .orders_wrap .orders_title {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .orders_wrap .order_content {
+  display: flex;
+}
+.user_content .user_main .orders_wrap .order_content navigator {
+  padding: 15rpx 0;
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_main .orders_wrap .order_content navigator .iconfont {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.user_content .user_main .address_wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx ;
+}
+.user_content .user_main .app_info_wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.user_content .user_main .app_info_wrap .app_info_item {
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .app_info_wrap .app_info_contact {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .recommend_wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx ;
+}
